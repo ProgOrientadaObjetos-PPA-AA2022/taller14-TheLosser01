@@ -4,7 +4,6 @@
  */
 package problema01;
 
-import java.util.ArrayList;
 
 /**
  *
@@ -65,7 +64,19 @@ public class Trabajador {
         return mesSueldo;
     }
     
-    
+     @Override
+    public String toString() {
+        
+        String cadena = String.format("Trabajador:\n"
+                + "Cedula: %s\n"
+                + "Nombre: %s\n"
+                + "Correo: %s\n"
+                + "Sueldo: %.2f\n"
+                + "Mes del Sueldo: %s\n",
+                cedula, nombres, correo, sueldo, mesSueldo);  
+        
+        return cadena;    
+    }
 
     
 }
